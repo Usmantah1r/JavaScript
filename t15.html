@@ -3,16 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Tutorial</title>
+    <title>JS Practice Set</title>
     <style>
-        *{
+        body{
             background-color: rgb(220, 243, 206);
         }
     </style>
 </head>
 <body>
     <script>
-        console.log("hello Mani")
+    //-------------------( Q1-3 )------------------------------------
+        let confirmation= true;
+        while(confirmation)
+        {
+        let age=prompt("Enter Your Age")
+        age=Number.parseInt(age)
+        if(age>=18){
+            alert("Yes! You can Drive.")
+        }
+        else if(age<0){
+            console.error("Age Entered is Negative!")
+            break;
+        }
+        else{
+            alert("No! You cannot Drive Yet.")  
+        }
+        confirmation= confirm("Do You Want to see the Prompt Again?")
+    }
     </script>
+    <script>
+        //-------------------Q4------------------------------------
+        let num=prompt("Enter a Number")
+        num=Number.parseInt(num)
+        if(num>4)
+            {
+                location.href="https://www.google.com"
+            }
+    //-------------------Q5------------------------------------
+        // let color=prompt("Enter Background Color")
+        // document.body.style.background= color;
+        //-------------------OR------------------------------------
+        document.body.style.background= prompt("Enter colour: ");
+    </script>
+    <h1>This Is The Practice Page</h1>
 </body>
 </html>
